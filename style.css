@@ -1,3 +1,4 @@
+/* Geral */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   background-color: #ff6fa5;
   color: white;
@@ -28,6 +30,11 @@ header nav a {
   font-weight: 500;
 }
 
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
 .hero {
   background: url("https://images.unsplash.com/photo-1602067340370-28ef4a35b19e") center/cover no-repeat;
   height: 70vh;
@@ -54,8 +61,14 @@ header nav a {
   border-radius: 30px;
   display: inline-block;
   margin-top: 15px;
+  transition: transform 0.2s;
 }
 
+.botao:hover {
+  transform: scale(1.05);
+}
+
+/* Serviços */
 .servicos {
   padding: 60px 20px;
   text-align: center;
@@ -87,6 +100,7 @@ header nav a {
   object-fit: cover;
 }
 
+/* Galeria */
 .galeria {
   background-color: #ffe9f3;
   padding: 60px 20px;
@@ -104,13 +118,20 @@ header nav a {
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
 }
 
+.fotos img:hover {
+  transform: scale(1.05);
+}
+
+/* Contato */
 .contato {
   padding: 60px 20px;
   text-align: center;
 }
 
+/* Footer */
 footer {
   background-color: #ff6fa5;
   color: white;
